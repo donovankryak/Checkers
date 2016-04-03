@@ -32,19 +32,19 @@ public:
 	
 	void printDisplay(xSize, ySize) {
 		int x; int y; int z;
-		printf("   x---x---x---x---x---x---x---x---x---x\n");
+		cout << "   x---x---x---x---x---x---x---x---x---x\n";
 		
 		for (x=0; x<xSize; ++x;)
 		{
-			printf("%d |", x+1);
+			cout << "%d |" << x+1;
 			for (y=0; y<ySize; ++y)
 			{
-				printf("%c |");
+				cout << "%c |";
 			}
-		printf("\n");
-		printf("   x---x---x---x---x---x---x---x---x---x\n");
+		cout << "\n";
+		cout << "   x---x---x---x---x---x---x---x---x---x\n";
 		}
-		printf("   a   b   c   d   e   f   g   h\n");
+		cout << "   a   b   c   d   e   f   g   h\n";
 	
 	};
 
