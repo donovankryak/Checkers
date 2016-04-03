@@ -27,7 +27,26 @@ public:
 	virtual Piece* movePiece(const Position&, const Position&);
 
 	virtual Side getWinner() const;
-};
+	
+	void printDisplay(xSize, ySize);
+	
+	void printDisplay(xSize, ySize) {
+		int x; int y; int z;
+		printf("   x---x---x---x---x---x---x---x---x---x\n");
+		
+		for (x=0; x<xSize; ++x;)
+		{
+			printf("%d |", x+1);
+			for (y=0; y<ySize; ++y)
+			{
+				printf("%c |");
+			}
+		printf("\n");
+		printf("   x---x---x---x---x---x---x---x---x---x\n");
+		}
+		printf("   a   b   c   d   e   f   g   h\n");
+	
+	};
 
 virtual friend std::ostream& operator<<(std::ostream&, const Board&);
 
