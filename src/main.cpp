@@ -15,13 +15,10 @@ using namespace std;
 #define ROW 8
 #define COL 8
 
-void printDisplay(int board[][COL]);
-void swapIJKL(int board[ROW][COL], int i, int j, int k, int l);
-char pieceprints(int i);
-void printDisplayFancy(int board[][COL]);
-int Playersturn(int board[][COL], int player,int i,int j,int k,int l);
+void printBoard(int board[][COL]);
+char printPieces(int i);
 
-char pieceprints(int i)
+char printPieces(int i)
 {
 	switch(i)
 	{
